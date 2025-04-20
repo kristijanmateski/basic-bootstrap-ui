@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+    <style>
+        .background {
+            background-image: url("./assets/cover.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 1000px;
+        }
+
+        .background::before {
+            background: rgba(0, 0, 0, 0.4); 
+            
+        }
+
+        .navBar-a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .info {
+            position: relative;
+            bottom: 600px;
+        }
+
+        .sectionOne {
+            margin-top: -100px;
+            height: 500px;
+        }
+
+        .sectionTwo {
+            background-color: #e3e1da;
+            height: 700px;
+        }
+
+        .sectionTwo,
+        .card {
+            background-color: #e3e1da;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .sectionThree {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: orange;
+            height: 75px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="background">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                    <a class="navbar-brand" href="#" style="font-weight: bold;color: white;font-size: 24px;">Averon</a>
+                    <form class="d-flex" role="search">
+                        <a href="#" class="navBar-a">Home</a>
+                        <a href="#" class="navBar-a">About</a>
+                        <a href="#" class="navBar-a">Tours</a>
+                        <a href="#" class="navBar-a">Services</a>
+                        <a href="#" class="navBar-a">Destination</a>
+                        <a href="#" class="navBar-a">Reviews</a>
+                        <a href="#" class="navBar-a">Blog</a>
+                        <a href="#" class="navBar-a">Contact</a>
+                    </form>
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="text-center" style="color: white;font-size: 60px;">Discover world tour with Experts!</h1>
+                <p class="text-center" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident a molestiae, <br> neque praesentium alias commodi ea deserunt animi omnis, temporibus ip </p>
+                <div class="d-flex justify-content-center">
+                    <input type="text" class="form-control" style="width: 600px; height: 60px;" placeholder="What are you looking for?">
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <section class="sectionOne">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <img src="./assets/sl1.jpg" class="rounded" style="width: 750px; height: 400px;" alt="photo1">
+          </div>
+          <div class="col-md-4" style="margin-top: 30px;">
+            <h3>Trusted & Award <br> Winning Tour Agency </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt, culpa ipsum dolor quibusdam alias libero accusamus labore quidem id explicabo. Sunt iusto harum eos ex facere, expedita mollitia aperiam!</p>
+            <button class="btn btn-warning">See more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sectionTwo pt-4">
+        <h3 class="text-center">Our Trending Popular Tours</h3>
+        <p class="text-center ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, omnis deleniti. Possimus inventore iste esse delectus ratione. Quaerat, magni</p>
+        <br>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 20rem;">
+                <img src="./assets/sl2.jpg" class="card-img-top rounded" alt="photo2">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Check details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 20rem;">
+                <img src="./assets/sl3.jpg" class="card-img-top rounded" alt="photo3">
+                <div class="card-body">
+                  <h5 class="card-title">Milano</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Check details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 20rem;">
+                <img src="./assets/sl4.jpg" class="card-img-top rounded" alt="photo4">
+                <div class="card-body">
+                  <h5 class="card-title">London</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Check details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+    <section class="sectionThree pb-4">
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-md-8">
+            <img src="./assets/sl5.jpg" class="rounded" style="width: 750px; height: 400px;" alt="photo5">
+          </div>
+          <div class="col-md-4" style="margin-top: 30px;">
+            <h3>Weekly Vacation <br> Specials </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt, culpa ipsum dolor quibusdam alias libero accusamus labore quidem id explicabo. Sunt iusto harum eos ex facere, expedita mollitia aperiam!</p>
+            <button class="btn btn-warning">See more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex align-items-center justify-content-center text-center">
+        <p class="m-0">@ Bootstrap 2025</p>
+    </footer>
+  </body>
+</html>
